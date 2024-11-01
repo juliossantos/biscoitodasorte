@@ -1,0 +1,30 @@
+.cookieClosed:hover {
+    animation: vibration 0.1s infinite; 
+}
+
+
+.msg{
+    animation: Up 1.2s ease-out forwards; /*usa o efeito de transição ease-out (suavizando o fim da animação) e forwards faz com que a imagem mantenha a posição final.*/
+}
+
+@keyframes vibration {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0px, 0px); }
+}   
+
+@keyframes Up {
+
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+
